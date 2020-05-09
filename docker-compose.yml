@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  paseca_admin:
+    build: .
+    container_name: "paseca_admin"
+    ports:
+      - "6565:6565"
+    restart: "always"
+    network_mode: "host"
