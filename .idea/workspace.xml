@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -55,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589023986995</updated>
-      <workItem from="1589023989118" duration="3071000" />
+      <workItem from="1589023989118" duration="9934000" />
     </task>
     <servers />
   </component>
@@ -67,25 +74,33 @@
       <screen x="50" y="27" width="1550" height="873" />
     </state>
     <state x="558" y="211" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/50.27.1550.873@50.27.1550.873" timestamp="1589024581217" />
-    <state width="1527" height="219" key="GridCell.Tab.0.bottom" timestamp="1589028327246">
+    <state width="1527" height="219" key="GridCell.Tab.0.bottom" timestamp="1589031414568">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.bottom/50.27.1550.873@50.27.1550.873" timestamp="1589028327246" />
-    <state width="1527" height="219" key="GridCell.Tab.0.center" timestamp="1589028327245">
+    <state width="1527" height="219" key="GridCell.Tab.0.bottom/50.27.1550.873@50.27.1550.873" timestamp="1589031414568" />
+    <state width="1527" height="219" key="GridCell.Tab.0.center" timestamp="1589031414567">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.center/50.27.1550.873@50.27.1550.873" timestamp="1589028327245" />
-    <state width="1527" height="219" key="GridCell.Tab.0.left" timestamp="1589028327244">
+    <state width="1527" height="219" key="GridCell.Tab.0.center/50.27.1550.873@50.27.1550.873" timestamp="1589031414567" />
+    <state width="1527" height="219" key="GridCell.Tab.0.left" timestamp="1589031414567">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.left/50.27.1550.873@50.27.1550.873" timestamp="1589028327244" />
-    <state width="1527" height="219" key="GridCell.Tab.0.right" timestamp="1589028327245">
+    <state width="1527" height="219" key="GridCell.Tab.0.left/50.27.1550.873@50.27.1550.873" timestamp="1589031414567" />
+    <state width="1527" height="219" key="GridCell.Tab.0.right" timestamp="1589031414567">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.right/50.27.1550.873@50.27.1550.873" timestamp="1589028327245" />
+    <state width="1527" height="219" key="GridCell.Tab.0.right/50.27.1550.873@50.27.1550.873" timestamp="1589031414567" />
     <state x="314" y="97" key="SettingsEditor" timestamp="1589026913448">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
     <state x="314" y="97" key="SettingsEditor/50.27.1550.873@50.27.1550.873" timestamp="1589026913448" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1589034831224">
+      <screen x="50" y="27" width="1550" height="873" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/50.27.1550.873@50.27.1550.873" timestamp="1589034831224" />
+    <state x="489" y="208" key="run.anything.popup" timestamp="1589035235448">
+      <screen x="50" y="27" width="1550" height="873" />
+    </state>
+    <state x="489" y="208" key="run.anything.popup/50.27.1550.873@50.27.1550.873" timestamp="1589035235448" />
   </component>
 </project>
