@@ -8,7 +8,7 @@ import {
     EditButton,
     DateField,
     TextField,
-    DateInput,
+    DateTimeInput,
     NumberField,
     TextInput,
     ShowButton,
@@ -45,7 +45,7 @@ export const UserCreate = (props) => (
             <TextInput validate={required()} source="surname" />
             <TextInput validate={required()} source="password" />
             <BooleanInput validate={required()} default={false} source="is_admin" />
-            <DateInput source="subscription_end" />
+            <DateTimeInput source="subscription_end" />
             <AwaitSelectInput label="Subscription type" validate={required()} source="subscription_type_id" optionText="name" fetchRel={"subscription_type"} />
             <AwaitSelectInput label="Subscription status" validate={required()} source="subscription_status_id" optionText="status" fetchRel={"subscription_status"} />
         </SimpleForm>
@@ -60,7 +60,7 @@ export const UserEdit = (props) => (
             <TextInput validate={required()} source="surname" />
             <TextInput validate={required()} source="password" />
             <BooleanInput validate={required()} default={false} source="is_admin" />
-            <DateInput source="subscription_end" />
+            <DateTimeInput source="subscription_end" />
             <AwaitSelectInput label="Subscription type" validate={required()} source="subscription_type_id" optionText="name" fetchRel={"subscription_type"} />
             <AwaitSelectInput label="Subscription status" validate={required()} source="subscription_status_id" optionText="status" fetchRel={"subscription_status"} />
         </SimpleForm>

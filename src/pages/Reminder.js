@@ -8,7 +8,7 @@ import {
     EditButton,
     DateField,
     TextField,
-    DateInput,
+    DateTimeInput,
     NumberField,
     TextInput,
     ShowButton,
@@ -40,7 +40,7 @@ export const ReminderCreate = (props) => (
             <TextInput validate={required()} source="title" />
             <TextInput multiline validate={required()} source="text" />
             <AwaitSelectInput label="Bee farm" validate={required()} source="bee_farm_id" optionText="name" fetchRel={"bee_farm"} />
-            <DateInput validate={required()} source="date" />
+            <DateTimeInput validate={required()} source="date" />
             <BooleanInput validate={required()} default={false} source="is_checked" />
         </SimpleForm>
     </Create>
@@ -52,7 +52,7 @@ export const ReminderEdit = (props) => (
             <TextInput validate={required()} source="title" />
             <TextInput multiline validate={required()} source="text" />
             <AwaitSelectInput label="Bee farm" validate={required()} source="bee_farm_id" optionText="name" fetchRel={"bee_farm"} />
-            <DateInput validate={required()} source="date" />
+            <DateTimeInput validate={required()} source="date" />
             <BooleanInput validate={required()} default={false} source="is_checked" />
         </SimpleForm>
     </Edit>

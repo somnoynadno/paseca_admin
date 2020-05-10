@@ -7,7 +7,7 @@ import {
     SimpleForm,
     EditButton,
     TextField,
-    DateInput,
+    DateTimeInput,
     DateField,
     NumberField,
     NumberInput,
@@ -35,7 +35,7 @@ export const HoneyHarvestCreate = (props) => (
         <SimpleForm redirect="list">
             <NumberInput validate={required()} source="amount" />
             <NumberInput validate={required()} source="total_price" />
-            <DateInput source="date" />
+            <DateTimeInput source="date" />
             <AwaitSelectInput label="Honey" validate={required()} source="honey_type_id" optionText="name" fetchRel={"honey_type"} />
             <AwaitSelectInput label="Family" validate={required()} source="bee_family_id" optionText="name" fetchRel={"bee_family"} />
         </SimpleForm>
@@ -47,7 +47,7 @@ export const HoneyHarvestEdit = (props) => (
         <SimpleForm>
             <NumberInput validate={required()} source="amount" />
             <NumberInput validate={required()} source="total_price" />
-            <DateInput source="date" />
+            <DateTimeInput source="date" />
             <AwaitSelectInput label="Honey" validate={required()} source="honey_type_id" optionText="name" fetchRel={"honey_type"} />
             <AwaitSelectInput label="Family" validate={required()} source="bee_family_id" optionText="name" fetchRel={"bee_family"} />
         </SimpleForm>

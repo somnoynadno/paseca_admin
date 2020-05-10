@@ -8,7 +8,7 @@ import {
     EditButton,
     DateField,
     TextField,
-    DateInput,
+    DateTimeInput,
     NumberField,
     TextInput,
     ShowButton,
@@ -39,12 +39,12 @@ export const BeeFamilyCreate = (props) => (
             <TextInput validate={required()} source="name" />
             <AwaitSelectInput label="Bee farm" validate={required()} source="bee_farm_id" optionText="name" fetchRel={"bee_farm"} />
             <AwaitSelectInput label="Bee breed" validate={required()} source="bee_breed_id" optionText="name" fetchRel={"bee_breed"} />
-            <DateInput source="last_inspection_date" />
-            <DateInput source="queen_bee_born_date" />
+            <DateTimeInput source="last_inspection_date" />
+            <DateTimeInput source="queen_bee_born_date" />
             <AwaitSelectInput label="Family status" validate={required()} source="bee_family_status_id" optionText="status" fetchRel={"bee_family_status"} />
             <AwaitSelectInput label="Hive" source="hive_id" optionText="name" fetchRel={"hive"} />
-            <AwaitSelectInput label="Parent1" validate={required()} source="parent1_id" optionText="name" fetchRel={"bee_family"} />
-            <AwaitSelectInput label="Parent2" validate={required()} source="parent2_id" optionText="name" fetchRel={"bee_family"} />
+            <AwaitSelectInput label="Parent1" source="parent1_id" optionText="name" fetchRel={"bee_family"} />
+            <AwaitSelectInput label="Parent2" source="parent2_id" optionText="name" fetchRel={"bee_family"} />
         </SimpleForm>
     </Create>
 );
@@ -55,12 +55,12 @@ export const BeeFamilyEdit = (props) => (
             <TextInput validate={required()} source="name" />
             <AwaitSelectInput label="Bee farm" validate={required()} source="bee_farm_id" optionText="name" fetchRel={"bee_farm"} />
             <AwaitSelectInput label="Bee breed" validate={required()} source="bee_breed_id" optionText="name" fetchRel={"bee_breed"} />
-            <DateInput source="last_inspection_date" />
-            <DateInput source="queen_bee_born_date" />
+            <DateTimeInput source="last_inspection_date" />
+            <DateTimeInput source="queen_bee_born_date" />
             <AwaitSelectInput label="Family status" validate={required()} source="bee_family_status_id" optionText="status" fetchRel={"bee_family_status"} />
             <AwaitSelectInput label="Hive" source="hive_id" optionText="name" fetchRel={"hive"} />
-            <AwaitSelectInput label="Parent1" validate={required()} source="parent1_id" optionText="name" fetchRel={"bee_family"} />
-            <AwaitSelectInput label="Parent2" validate={required()} source="parent2_id" optionText="name" fetchRel={"bee_family"} />
+            <AwaitSelectInput label="Parent1" source="parent1_id" optionText="name" fetchRel={"bee_family"} />
+            <AwaitSelectInput label="Parent2" source="parent2_id" optionText="name" fetchRel={"bee_family"} />
         </SimpleForm>
     </Edit>
 );
