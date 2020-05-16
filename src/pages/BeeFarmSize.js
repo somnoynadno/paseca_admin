@@ -31,7 +31,7 @@ export const BeeFarmSizeCreate = (props) => (
     <Create {...props}>
         <SimpleForm redirect="list">
             <TextInput validate={required()} source="name" />
-            <TextInput source="description" />
+            <TextInput multiline source="description" />
             <NumberInput validate={required()} source="max_x" />
             <NumberInput validate={required()} source="max_y" />
         </SimpleForm>
@@ -42,7 +42,7 @@ export const BeeFarmSizeEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput validate={required()} source="name" />
-            <TextInput source="description" />
+            <TextInput multiline source="description" />
             <NumberInput validate={required()} source="max_x" />
             <NumberInput validate={required()} source="max_y" />
         </SimpleForm>

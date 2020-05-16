@@ -28,7 +28,7 @@ export const BeeBreedCreate = (props) => (
     <Create {...props}>
         <SimpleForm redirect="list">
             <TextInput validate={required()} source="name" />
-            <TextInput validate={required()} source="description" />
+            <TextInput validate={required()} multiline source="description" />
         </SimpleForm>
     </Create>
 );
@@ -37,7 +37,7 @@ export const BeeBreedEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput validate={required()} source="name" />
-            <TextInput validate={required()} source="description" />
+            <TextInput validate={required()} multiline source="description" />
         </SimpleForm>
     </Edit>
 );

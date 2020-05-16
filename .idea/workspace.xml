@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f952eaf8-2a79-457d-8ca3-6efa2383ea1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/ControlHarvest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BeeBreed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BeeBreed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BeeDisease.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BeeDisease.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/BeeFamily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BeeFamily.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HoneyHarvest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HoneyHarvest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HoneySale.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HoneySale.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Reminder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Reminder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BeeFarm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BeeFarm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BeeFarmSize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BeeFarmSize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Hive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HoneyType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HoneyType.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +77,8 @@
       <updated>1589023986995</updated>
       <workItem from="1589023989118" duration="10757000" />
       <workItem from="1589130685365" duration="1774000" />
-      <workItem from="1589134919770" duration="1702000" />
+      <workItem from="1589134919770" duration="2379000" />
+      <workItem from="1589655879338" duration="2507000" />
     </task>
     <servers />
   </component>
@@ -83,22 +90,22 @@
       <screen x="50" y="27" width="1550" height="873" />
     </state>
     <state x="558" y="211" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/50.27.1550.873@50.27.1550.873" timestamp="1589024581217" />
-    <state width="1527" height="219" key="GridCell.Tab.0.bottom" timestamp="1589133953491">
+    <state width="1527" height="219" key="GridCell.Tab.0.bottom" timestamp="1589657250305">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.bottom/50.27.1550.873@50.27.1550.873" timestamp="1589133953491" />
-    <state width="1527" height="219" key="GridCell.Tab.0.center" timestamp="1589133953490">
+    <state width="1527" height="219" key="GridCell.Tab.0.bottom/50.27.1550.873@50.27.1550.873" timestamp="1589657250305" />
+    <state width="1527" height="219" key="GridCell.Tab.0.center" timestamp="1589657250304">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.center/50.27.1550.873@50.27.1550.873" timestamp="1589133953490" />
-    <state width="1527" height="219" key="GridCell.Tab.0.left" timestamp="1589133953490">
+    <state width="1527" height="219" key="GridCell.Tab.0.center/50.27.1550.873@50.27.1550.873" timestamp="1589657250304" />
+    <state width="1527" height="219" key="GridCell.Tab.0.left" timestamp="1589657250304">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.left/50.27.1550.873@50.27.1550.873" timestamp="1589133953490" />
-    <state width="1527" height="219" key="GridCell.Tab.0.right" timestamp="1589133953490">
+    <state width="1527" height="219" key="GridCell.Tab.0.left/50.27.1550.873@50.27.1550.873" timestamp="1589657250304" />
+    <state width="1527" height="219" key="GridCell.Tab.0.right" timestamp="1589657250304">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1527" height="219" key="GridCell.Tab.0.right/50.27.1550.873@50.27.1550.873" timestamp="1589133953490" />
+    <state width="1527" height="219" key="GridCell.Tab.0.right/50.27.1550.873@50.27.1550.873" timestamp="1589657250304" />
     <state x="314" y="97" key="SettingsEditor" timestamp="1589026913448">
       <screen x="50" y="27" width="1550" height="873" />
     </state>

@@ -36,7 +36,7 @@ export const BeeFarmCreate = (props) => (
     <Create {...props}>
         <SimpleForm redirect="list">
             <TextInput validate={required()} source="name" />
-            <TextInput source="location" />
+            <TextInput multiline source="location" />
             <AwaitSelectInput label="User" validate={required()} source="user_id" optionText="surname" fetchRel={"user"} />
             <AwaitSelectInput label="Farm type" validate={required()} source="bee_farm_type_id" optionText="name" fetchRel={"bee_farm_type"} />
             <AwaitSelectInput label="Farm size" validate={required()} source="bee_farm_size_id" optionText="name" fetchRel={"bee_farm_size"} />
@@ -48,7 +48,7 @@ export const BeeFarmEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput validate={required()} source="name" />
-            <TextInput source="location" />
+            <TextInput multiline source="location" />
             <AwaitSelectInput label="User" validate={required()} source="user_id" optionText="surname" fetchRel={"user"} />
             <AwaitSelectInput label="Farm type" validate={required()} source="bee_farm_type_id" optionText="name" fetchRel={"bee_farm_type"} />
             <AwaitSelectInput label="Farm size" validate={required()} source="bee_farm_size_id" optionText="name" fetchRel={"bee_farm_size"} />

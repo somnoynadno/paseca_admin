@@ -12,6 +12,7 @@ import {
     TextInput,
     ShowButton,
     Show,
+    NumberInput,
     SimpleShowLayout,
     required
 } from 'react-admin';
@@ -36,8 +37,8 @@ export const HiveCreate = (props) => (
     <Create {...props}>
         <SimpleForm redirect="list">
             <TextInput validate={required()} source="name" />
-            <TextInput source="coord_x" />
-            <TextInput source="coord_y" />
+            <NumberInput source="coord_x" />
+            <NumberInput source="coord_y" />
             <AwaitSelectInput label="Bee family" source="bee_family_id" optionText="name" fetchRel={"bee_family"} />
             <AwaitSelectInput label="Hive format" validate={required()} source="hive_format_id" optionText="name" fetchRel={"hive_format"} />
             <AwaitSelectInput label="Frame type" validate={required()} source="hive_frame_type_id" optionText="name" fetchRel={"hive_frame_type"} />
@@ -49,8 +50,8 @@ export const HiveEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput validate={required()} source="name" />
-            <TextInput source="coord_x" />
-            <TextInput source="coord_y" />
+            <NumberInput source="coord_x" />
+            <NumberInput source="coord_y" />
             <AwaitSelectInput label="Bee family" source="bee_family_id" optionText="name" fetchRel={"bee_family"} />
             <AwaitSelectInput label="Hive format" validate={required()} source="hive_format_id" optionText="name" fetchRel={"hive_format"} />
             <AwaitSelectInput label="Frame type" validate={required()} source="hive_frame_type_id" optionText="name" fetchRel={"hive_frame_type"} />

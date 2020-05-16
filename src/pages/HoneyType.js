@@ -21,7 +21,7 @@ export const HoneyTypeList = (props) => (
             <TextField source="name" />
             <NumberField source="base_price" />
             <TextField source="description" />
-            <EditButton basePath="/bee_farm_type" />
+            <EditButton basePath="/honey_type" />
         </Datagrid>
     </List>
 );
@@ -30,7 +30,7 @@ export const HoneyTypeCreate = (props) => (
     <Create {...props}>
         <SimpleForm redirect="list">
             <TextInput validate={required()} source="name" />
-            <TextInput source="description" />
+            <TextInput multiline source="description" />
             <NumberInput validate={required()} source="base_price" />
         </SimpleForm>
     </Create>
@@ -40,7 +40,7 @@ export const HoneyTypeEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput validate={required()} source="name" />
-            <TextInput source="description" />
+            <TextInput multiline source="description" />
             <NumberInput validate={required()} source="base_price" />
         </SimpleForm>
     </Edit>

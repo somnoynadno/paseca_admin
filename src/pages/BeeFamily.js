@@ -14,6 +14,8 @@ import {
     ShowButton,
     Show,
     SimpleShowLayout,
+    BooleanField,
+    BooleanInput,
     required
 } from 'react-admin';
 import {AwaitSelectInput} from "../components/AwaitSelectInput";
@@ -27,6 +29,7 @@ export const BeeFamilyList = (props) => (
             <TextField label="Bee farm" source="bee_farm.name" />
             <TextField label="Bee breed" source="bee_breed.name" />
             <TextField label="Family status" source="bee_family_status.status" />
+            <BooleanField source="is_control" />
             <ShowButton />
             <EditButton basePath="/bee_family" />
         </Datagrid>
@@ -41,6 +44,7 @@ export const BeeFamilyCreate = (props) => (
             <AwaitSelectInput label="Bee breed" validate={required()} source="bee_breed_id" optionText="name" fetchRel={"bee_breed"} />
             <DateTimeInput source="last_inspection_date" />
             <DateTimeInput source="queen_bee_born_date" />
+            <BooleanInput source="is_control" validate={required()} default={false} />
             <AwaitSelectInput label="Family status" validate={required()} source="bee_family_status_id" optionText="status" fetchRel={"bee_family_status"} />
             <AwaitSelectInput label="Hive" source="hive_id" optionText="name" fetchRel={"hive"} />
             <AwaitSelectInput label="Parent1" source="parent1_id" optionText="name" fetchRel={"bee_family"} />
@@ -57,6 +61,7 @@ export const BeeFamilyEdit = (props) => (
             <AwaitSelectInput label="Bee breed" validate={required()} source="bee_breed_id" optionText="name" fetchRel={"bee_breed"} />
             <DateTimeInput source="last_inspection_date" />
             <DateTimeInput source="queen_bee_born_date" />
+            <BooleanInput source="is_control" validate={required()} default={false} />
             <AwaitSelectInput label="Family status" validate={required()} source="bee_family_status_id" optionText="status" fetchRel={"bee_family_status"} />
             <AwaitSelectInput label="Hive" source="hive_id" optionText="name" fetchRel={"hive"} />
             <AwaitSelectInput label="Parent1" source="parent1_id" optionText="name" fetchRel={"bee_family"} />

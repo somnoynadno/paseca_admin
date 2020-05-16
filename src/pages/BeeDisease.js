@@ -28,7 +28,7 @@ export const BeeDiseaseCreate = (props) => (
     <Create {...props}>
         <SimpleForm redirect="list">
             <TextInput validate={required()} source="name" />
-            <TextInput source="description" />
+            <TextInput multiline source="description" />
         </SimpleForm>
     </Create>
 );
@@ -37,7 +37,7 @@ export const BeeDiseaseEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput validate={required()} source="name" />
-            <TextInput source="description" />
+            <TextInput multiline source="description" />
         </SimpleForm>
     </Edit>
 );

@@ -22,6 +22,8 @@ import {ReminderCreate, ReminderEdit, ReminderList, ReminderShow} from "./pages/
 import {SubscriptionTypeCreate, SubscriptionTypeEdit, SubscriptionTypeList} from "./pages/SubscriptionType";
 import {SubscriptionStatusCreate, SubscriptionStatusEdit, SubscriptionStatusList} from "./pages/SubscriptionStatus";
 import {UserCreate, UserEdit, UserList, UserShow} from "./pages/User";
+import {NewsCreate, NewsEdit, NewsList} from "./pages/News";
+import {ControlHarvestCreate, ControlHarvestEdit, ControlHarvestList} from "./pages/ControlHarvest";
 
 // LOCALIZATION:
 // import polyglotI18nProvider from 'ra-i18n-polyglot';
@@ -51,6 +53,7 @@ const App = () => (
         <Resource name="bee_farm" list={BeeFarmList} create={BeeFarmCreate} edit={BeeFarmEdit} show={BeeFarmShow} />
         <Resource name="bee_farm_size" list={BeeFarmSizeList} create={BeeFarmSizeCreate} edit={BeeFarmSizeEdit} />
         <Resource name="bee_farm_type" list={BeeFarmTypeList} create={BeeFarmTypeCreate} edit={BeeFarmTypeEdit} />
+        <Resource name="control_harvest" list={ControlHarvestList} create={ControlHarvestCreate} edit={ControlHarvestEdit} />
         <Resource name="family_disease" list={FamilyDiseaseList} create={FamilyDiseaseCreate} edit={FamilyDiseaseEdit} />
         <Resource name="hive" list={HiveList} create={HiveCreate} edit={HiveEdit} show={HiveShow} />
         <Resource name="hive_format" list={HiveFormatList} create={HiveFormatCreate} edit={HiveFormatEdit} />
@@ -58,6 +61,7 @@ const App = () => (
         <Resource name="honey_harvest" list={HoneyHarvestList} create={HoneyHarvestCreate} edit={HoneyHarvestEdit} />
         <Resource name="honey_sale" list={HoneySaleList} create={HoneySaleCreate} edit={HoneySaleEdit} />
         <Resource name="honey_type" list={HoneyTypeList} create={HoneyTypeCreate} edit={HoneyTypeEdit} />
+        <Resource name="news" list={NewsList} create={NewsCreate} edit={NewsEdit} />
         <Resource name="reminder" list={ReminderList} create={ReminderCreate} edit={ReminderEdit} show={ReminderShow} />
         <Resource name="subscription_status" list={SubscriptionStatusList} create={SubscriptionStatusCreate} edit={SubscriptionStatusEdit} />
         <Resource name="subscription_type" list={SubscriptionTypeList} create={SubscriptionTypeCreate} edit={SubscriptionTypeEdit} />
