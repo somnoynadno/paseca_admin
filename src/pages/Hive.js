@@ -24,7 +24,7 @@ export const HiveList = (props) => (
         <Datagrid>
             <NumberField label="ID" source="id" />
             <TextField source="name" />
-            <TextField label="Bee family" source="bee_family.name" />
+            <TextField label="Bee farm" source="bee_farm.name" />
             <TextField label="Format" source="hive_format.name" />
             <TextField label="Frame type" source="hive_frame_type.name" />
             <ShowButton />
@@ -39,7 +39,7 @@ export const HiveCreate = (props) => (
             <TextInput validate={required()} source="name" />
             <NumberInput source="coord_x" />
             <NumberInput source="coord_y" />
-            <AwaitSelectInput label="Bee family" source="bee_family_id" optionText="name" fetchRel={"bee_family"} />
+            <AwaitSelectInput label="Bee farm" source="bee_farm_id" optionText="name" fetchRel={"bee_farm"} />
             <AwaitSelectInput label="Hive format" validate={required()} source="hive_format_id" optionText="name" fetchRel={"hive_format"} />
             <AwaitSelectInput label="Frame type" validate={required()} source="hive_frame_type_id" optionText="name" fetchRel={"hive_frame_type"} />
         </SimpleForm>
@@ -52,7 +52,7 @@ export const HiveEdit = (props) => (
             <TextInput validate={required()} source="name" />
             <NumberInput source="coord_x" />
             <NumberInput source="coord_y" />
-            <AwaitSelectInput label="Bee family" source="bee_family_id" optionText="name" fetchRel={"bee_family"} />
+            <AwaitSelectInput label="Bee farm" source="bee_farm_id" optionText="name" fetchRel={"bee_farm"} />
             <AwaitSelectInput label="Hive format" validate={required()} source="hive_format_id" optionText="name" fetchRel={"hive_format"} />
             <AwaitSelectInput label="Frame type" validate={required()} source="hive_frame_type_id" optionText="name" fetchRel={"hive_frame_type"} />
         </SimpleForm>
@@ -68,7 +68,7 @@ export const HiveShow = (props) => (
             <TextField source="name" />
             <TextField source="coord_x" />
             <TextField source="coord_y" />
-            <TextField label="Bee family" source="bee_family.name" />
+            <TextField label="Bee farm" source="bee_farm.name" />
             <TextField label="Format" source="hive_format.name" />
             <TextField label="Frame type" source="hive_frame_type.name" />
         </SimpleShowLayout>
