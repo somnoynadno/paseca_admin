@@ -15,11 +15,11 @@ export class AwaitSelectInput extends React.Component {
     }
 
     async getData() {
-        // const token = localStorage.getItem('token');
-        // if (token !== null && token !== undefined) {
+        const token = localStorage.getItem('token');
+        if (token !== null && token !== undefined) {
         const request = new Request(apiAddress + "/"+ this.props.fetchRel + "?_start=0&_end=-1&_sort=id&_order=asc", {
             method: 'GET',
-            // headers: new Headers({ 'Authorization': `Bearer ${token}` }),
+            headers: new Headers({ 'Authorization': `Bearer ${token}` }),
         });
         return await fetch(request)
             .then(res => res.json())
@@ -29,7 +29,7 @@ export class AwaitSelectInput extends React.Component {
                 })
                 return res;
             })
-        // }
+        }
     }
 
     render() {

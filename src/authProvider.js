@@ -1,10 +1,10 @@
-import {apiAddress} from "./options";
+import {apiDomain} from "./options";
 
 const authProvider = {
-    login: ({ username, password }) =>  {
-        const request = new Request(apiAddress + '/login', {
+    login: ({ email, password }) =>  {
+        const request = new Request(apiDomain + '/api/auth/login', {
             method: 'POST',
-            body: JSON.stringify({ username, password }),
+            body: JSON.stringify({ email, password }),
             headers: new Headers({ 'Content-Type': 'application/json' }),
         });
         return fetch(request)

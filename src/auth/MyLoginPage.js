@@ -25,14 +25,14 @@ let pad = {
 }
 
 const MyLoginPage = ({ theme }) => {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const login = useLogin();
     const notify = useNotify();
     const submit = (e) => {
         e.preventDefault();
-        login({ username, password })
-            .catch(() => notify('Неверные логин или пароль'));
+        login({ email, password })
+            .catch(() => notify('Wrong credentials'));
     };
 
     return (
@@ -40,12 +40,12 @@ const MyLoginPage = ({ theme }) => {
             <div style={bgStyle}>
                 <div style={pad}></div>
                 <div style={layoutStyle}>
-                    <h2>Панель администратора</h2>
+                    <h2>AdminKa</h2>
                     <form onSubmit={submit}>
-                        Пользователь <br />
-                        <input name="username" type="text" value={username} onChange={e => setUsername(e.target.value)} />
+                        Email <br />
+                        <input name="email" type="text" value={email} onChange={e => setEmail(e.target.value)} />
                         <br /> <br />
-                        Пароль <br />
+                        Password <br />
                         <input name="password" type="password" value={password} onChange={e => setPassword(e.target.value)} />
                         <br /><br />
                         <button type="submit">Войти</button>

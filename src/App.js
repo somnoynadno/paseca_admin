@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Admin, Resource } from 'react-admin';
+import { Admin, Resource, fetchUtils } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
 
 import {apiAddress} from "./options";
@@ -24,6 +24,9 @@ import {SubscriptionStatusCreate, SubscriptionStatusEdit, SubscriptionStatusList
 import {UserCreate, UserEdit, UserList, UserShow} from "./pages/User";
 import {NewsCreate, NewsEdit, NewsList} from "./pages/News";
 import {ControlHarvestCreate, ControlHarvestEdit, ControlHarvestList} from "./pages/ControlHarvest";
+import MyLoginPage from "./auth/MyLoginPage";
+import MyLogoutButton from "./auth/MyLogoutButton";
+import authProvider from "./authProvider";
 
 // LOCALIZATION:
 // import polyglotI18nProvider from 'ra-i18n-polyglot';
@@ -32,20 +35,19 @@ import {ControlHarvestCreate, ControlHarvestEdit, ControlHarvestList} from "./pa
 // const i18nProvider = polyglotI18nProvider(() => russianMessages, 'ru');
 
 // AUTH PROVIDER
-// const httpClient = (url, options = {}) => {
-//       if (!options.headers) {
-//             options.headers = new Headers({ Accept: 'application/json' });
-//       }
-//       const token = localStorage.getItem('token');
-//       options.headers.set('Authorization', `Bearer ${token}`);
-//       return fetchUtils.fetchJson(url, options);
-// };
+const httpClient = (url, options = {}) => {
+      if (!options.headers) {
+            options.headers = new Headers({ Accept: 'application/json' });
+      }
+      const token = localStorage.getItem('token');
+      options.headers.set('Authorization', `Bearer ${token}`);
+      return fetchUtils.fetchJson(url, options);
+};
 
-// const dataProvider = jsonServerProvider(apiAddress, httpClient);
-const dataProvider = jsonServerProvider(apiAddress);
+const dataProvider = jsonServerProvider(apiAddress, httpClient);
 
 const App = () => (
-    <Admin dataProvider={dataProvider}>
+    <Admin loginPage={MyLoginPage} logoutButton={MyLogoutButton} authProvider={authProvider}  dataProvider={dataProvider}>
         <Resource name="bee_breed" list={BeeBreedList} create={BeeBreedCreate} edit={BeeBreedEdit} />
         <Resource name="bee_disease" list={BeeDiseaseList} create={BeeDiseaseCreate} edit={BeeDiseaseEdit} />
         <Resource name="bee_family" list={BeeFamilyList} create={BeeFamilyCreate} edit={BeeFamilyEdit} show={BeeFamilyShow} />
