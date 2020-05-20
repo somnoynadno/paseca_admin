@@ -27,6 +27,7 @@ import {ControlHarvestCreate, ControlHarvestEdit, ControlHarvestList} from "./pa
 import MyLoginPage from "./auth/MyLoginPage";
 import MyLogoutButton from "./auth/MyLogoutButton";
 import authProvider from "./authProvider";
+import {PollenHarvestCreate, PollenHarvestEdit, PollenHarvestList} from "./pages/PollenHarvest";
 
 // LOCALIZATION:
 // import polyglotI18nProvider from 'ra-i18n-polyglot';
@@ -64,6 +65,7 @@ const App = () => (
         <Resource name="honey_sale" list={HoneySaleList} create={HoneySaleCreate} edit={HoneySaleEdit} />
         <Resource name="honey_type" list={HoneyTypeList} create={HoneyTypeCreate} edit={HoneyTypeEdit} />
         <Resource name="news" list={NewsList} create={NewsCreate} edit={NewsEdit} />
+        <Resource name="pollen_harvest" list={PollenHarvestList} create={PollenHarvestCreate} edit={PollenHarvestEdit} />
         <Resource name="reminder" list={ReminderList} create={ReminderCreate} edit={ReminderEdit} show={ReminderShow} />
         <Resource name="subscription_status" list={SubscriptionStatusList} create={SubscriptionStatusCreate} edit={SubscriptionStatusEdit} />
         <Resource name="subscription_type" list={SubscriptionTypeList} create={SubscriptionTypeCreate} edit={SubscriptionTypeEdit} />

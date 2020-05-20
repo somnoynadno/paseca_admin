@@ -64,14 +64,9 @@ export const BeeFarmShow = (props) => (
             <DateField source="updated_at" />
             <TextField source="name" />
             <TextField source="location" />
-            <TextField label="Bee farm" source="bee_farm.name" />
-            <TextField label="Bee breed" source="bee_breed.name" />
-            <DateField source="last_inspection_date" />
-            <DateField source="queen_bee_born_date" />
-            <TextField label="Family status" source="bee_family_status.status" />
-            <TextField label="Hive" source="hive.name" />
-            <TextField label="Parent1" source="parent1.name" />
-            <TextField label="Parent2" source="parent2.name" />
+            <TextField label="User" source="user.surname" />
+            <TextField label="Farm type" source="bee_farm_type.name" />
+            <TextField label="Family size" source="bee_farm_size.name" />
         </SimpleShowLayout>
     </Show>
 );
