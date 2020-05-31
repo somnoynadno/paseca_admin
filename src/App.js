@@ -28,6 +28,8 @@ import MyLoginPage from "./auth/MyLoginPage";
 import MyLogoutButton from "./auth/MyLogoutButton";
 import authProvider from "./authProvider";
 import {PollenHarvestCreate, PollenHarvestEdit, PollenHarvestList} from "./pages/PollenHarvest";
+import {SwarmCreate, SwarmEdit, SwarmList} from "./pages/Swarm";
+import {SwarmStatusCreate, SwarmStatusEdit, SwarmStatusList} from "./pages/SwarmStatus";
 
 // LOCALIZATION:
 // import polyglotI18nProvider from 'ra-i18n-polyglot';
@@ -69,6 +71,8 @@ const App = () => (
         <Resource name="reminder" list={ReminderList} create={ReminderCreate} edit={ReminderEdit} show={ReminderShow} />
         <Resource name="subscription_status" list={SubscriptionStatusList} create={SubscriptionStatusCreate} edit={SubscriptionStatusEdit} />
         <Resource name="subscription_type" list={SubscriptionTypeList} create={SubscriptionTypeCreate} edit={SubscriptionTypeEdit} />
+        <Resource name="swarm" list={SwarmList} create={SwarmCreate} edit={SwarmEdit} />
+        <Resource name="swarm_status" list={SwarmStatusList} create={SwarmStatusCreate} edit={SwarmStatusEdit} />
         <Resource name="user" list={UserList} create={UserCreate} edit={UserEdit} show={UserShow} />
     </Admin>
 );
