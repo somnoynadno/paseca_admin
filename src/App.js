@@ -30,6 +30,8 @@ import authProvider from "./authProvider";
 import {PollenHarvestCreate, PollenHarvestEdit, PollenHarvestList} from "./pages/PollenHarvest";
 import {SwarmCreate, SwarmEdit, SwarmList} from "./pages/Swarm";
 import {SwarmStatusCreate, SwarmStatusEdit, SwarmStatusList} from "./pages/SwarmStatus";
+import {WikiPageCreate, WikiPageEdit, WikiPageList, WikiPageShow} from "./pages/WIkiPage";
+import {WikiSectionCreate, WikiSectionEdit, WikiSectionList} from "./pages/WikiSection";
 
 // LOCALIZATION:
 // import polyglotI18nProvider from 'ra-i18n-polyglot';
@@ -74,6 +76,8 @@ const App = () => (
         <Resource name="swarm" list={SwarmList} create={SwarmCreate} edit={SwarmEdit} />
         <Resource name="swarm_status" list={SwarmStatusList} create={SwarmStatusCreate} edit={SwarmStatusEdit} />
         <Resource name="user" list={UserList} create={UserCreate} edit={UserEdit} show={UserShow} />
+        <Resource name="wiki_page" list={WikiPageList} create={WikiPageCreate} edit={WikiPageEdit} show={WikiPageShow} />
+        <Resource name="wiki_section" list={WikiSectionList} create={WikiSectionCreate} edit={WikiSectionEdit} />
     </Admin>
 );
 
