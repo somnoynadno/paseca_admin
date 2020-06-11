@@ -24,14 +24,15 @@ import {SubscriptionStatusCreate, SubscriptionStatusEdit, SubscriptionStatusList
 import {UserCreate, UserEdit, UserList, UserShow} from "./pages/User";
 import {NewsCreate, NewsEdit, NewsList} from "./pages/News";
 import {ControlHarvestCreate, ControlHarvestEdit, ControlHarvestList} from "./pages/ControlHarvest";
-import MyLoginPage from "./auth/MyLoginPage";
-import MyLogoutButton from "./auth/MyLogoutButton";
-import authProvider from "./authProvider";
 import {PollenHarvestCreate, PollenHarvestEdit, PollenHarvestList} from "./pages/PollenHarvest";
 import {SwarmCreate, SwarmEdit, SwarmList} from "./pages/Swarm";
 import {SwarmStatusCreate, SwarmStatusEdit, SwarmStatusList} from "./pages/SwarmStatus";
 import {WikiPageCreate, WikiPageEdit, WikiPageList, WikiPageShow} from "./pages/WIkiPage";
 import {WikiSectionCreate, WikiSectionEdit, WikiSectionList} from "./pages/WikiSection";
+
+import MyLoginPage from "./auth/MyLoginPage";
+import MyLogoutButton from "./auth/MyLogoutButton";
+import authProvider from "./authProvider";
 
 // LOCALIZATION:
 // import polyglotI18nProvider from 'ra-i18n-polyglot';

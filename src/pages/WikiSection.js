@@ -9,7 +9,7 @@ import {
     TextField,
     NumberField,
     required,
-    TextInput, ShowButton,
+    TextInput,
 } from 'react-admin';
 
 

@@ -13,7 +13,8 @@ import {
     RichTextField,
     DateField,
     Show,
-    SimpleShowLayout, ShowButton
+    SimpleShowLayout,
+    ShowButton
 } from 'react-admin';
 import RichTextInput from 'ra-input-rich-text';
 import {AwaitSelectInput} from "../components/AwaitSelectInput";
@@ -89,4 +90,3 @@ export const WikiPageShow = (props) => (
         </SimpleShowLayout>
     </Show>
 );
-
